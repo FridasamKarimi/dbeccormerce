@@ -80,7 +80,7 @@ CREATE TABLE attribute_type (
     type_name(50) NOT NULL
 );
 
-CREATE TABLE product attribute (
+CREATE TABLE product_attribute (
     attribute_id INT AUTO_INCREMENT PRIMARY KEY,
     product_id INT NOT NULL,
     attribute_category_id INT NOT NULL,
