@@ -10,7 +10,13 @@ Our ecommerce database enables the merchants to adjust their prices whenever the
 Our database enables real time inventory management. The world has changed and a just-in-time inventory system exhibits that. If inventory supply is dwindling, reorders are added to keep giving the customers what they want!
 # 📊 Sample data journey
 Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan 🏀
-<pre> ```sql -- 1. Brand INSERT INTO brand VALUES (1, 'Nike', 'Athletic footwear'); -- 2. Category INSERT INTO product_category VALUES (5, 'Footwear', 'Shoes', NULL); -- 3. Product INSERT INTO product VALUES (101, 'Air Max', 1, 5, 120.00); -- 4. Variation -- Colors INSERT INTO color VALUES (10, 'Infrared', '#FF4D00'); -- Sizes INSERT INTO size_option VALUES (21, 2, 'US 10'); -- Variation INSERT INTO product_variation VALUES (501, 101, 10, 21); -- 5. Inventory -- Special pricing for limited edition INSERT INTO product_item VALUES (1001, 501, 50, 150.00); ``` </pre>
+ 1. Brand <pre> INSERT INTO brand VALUES (1, 'Nike', 'Athletic footwear');</pre>
+ 2. Category INSERT INTO product_category VALUES (5, 'Footwear', 'Shoes', NULL);
+ 3. Product INSERT INTO product VALUES (101, 'Air Max', 1, 5, 120.00); --
+ 4. Variation -- Colors INSERT INTO color VALUES (10, 'Infrared', '#FF4D00');
+     -- Sizes INSERT INTO size_option VALUES (21, 2, 'US 10');
+    -- Variation INSERT INTO product_variation VALUES (501, 101, 10, 21);
+ 5. Inventory -- Special pricing for limited edition INSERT INTO product_item VALUES (1001, 501, 50, 150.00); 
 
 # 🔗 Critical Relationships
 
