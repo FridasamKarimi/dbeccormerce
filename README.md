@@ -56,7 +56,7 @@ A comprehensive database solution for online retailers, enabling efficient manag
    mysql -u [username] -p ecommerce_db < sql/sample_data.sql
    ```
 
-# 📊 ER Diagram
+# 📊 ERD Diagram
 ![erd](https://github.com/user-attachments/assets/549034ac-3691-4f76-aaa8-514967182a85)
 <img width="955" alt="erd2" src="https://github.com/user-attachments/assets/1f9290bc-a4d6-4e29-96ab-89c8dbedbfbd" />
 
