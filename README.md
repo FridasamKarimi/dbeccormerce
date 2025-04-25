@@ -22,7 +22,7 @@ A comprehensive database solution for online retailers, enabling efficient manag
 | `product_variation` | Color/size combinations | variation_id, product_id, color, size |
 | `product_item` | Inventory stock units | item_id, variation_id, SKU, stock_quantity |
 
-### Extended Features
+### Intricate Features
 ![extended features](https://github.com/user-attachments/assets/36c1b34b-a8d6-465c-8290-960cdc7378e2)
 
 
