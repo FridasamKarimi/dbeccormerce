@@ -10,7 +10,8 @@ Our ecommerce database enables the merchants to adjust their prices whenever the
 Our database enables real time inventory management. The world has changed and a just-in-time inventory system exhibits that. If inventory supply is dwindling, reorders are added to keep giving the customers what they want!
 # 📊 Sample data journey
 Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan 🏀
-1. Brand
+<pre> ```sql
+   1. Brand
    INSERT INTO brand VALUES (1, 'Nike', 'Athletic footwear');
 2. Category
    INSERT INTO product_category VALUES (5, 'Footwear', 'Shoes', NULL);
@@ -27,7 +28,7 @@ Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan
    INSERT INTO product_variation VALUES (501, 101, 10, 21);
 5. Inventory
    /* Special pricing for limited edition */
-   INSERT INTO product_item VALUES (1001, 501, 50, 150.00);
+   INSERT INTO product_item VALUES (1001, 501, 50, 150.00); ``` </pre>
 
 # 🔗 Critical Relationships
 
@@ -38,5 +39,15 @@ Variation → Item	        1:1	               Red/Size 10 → Stock #1001
 Category → Subcategory	 Self-Reference	   Footwear → Running Shoes
 
 TL;DR; One brand can have multiple products (one to many) Nike has a lot of shoes!brand is the parent with a lot of children. One product can also have multiple variations, we all have different sizes of feet & different tastes too, Red isn't my colour. Each variation points to exactly one inventory item - available in our warehouse just for you. Category - subcategory (self-reference) This is the everything store, that provides navigation ie think of Amazon. 
-       
+
+# 👟 Product lifecycle. 
+![lifecycle](https://github.com/user-attachments/assets/b5451b5b-c15e-4a7e-bbf2-2e3667fb285c)
+
+The journey our 'child' Nike Air Max takes. They grow up so fast 😢
+
+# ⚙️ Operational Flows
+
+Order Processing:
+- Decrement product_item.stock_quantity
+- Check price_override before charging
 
