@@ -38,7 +38,12 @@ The journey our 'child' Nike Air Max takes. They grow up so fast 😢
 
 # ⚙️ Operational Flows
 
-Order Processing:
+1. Order Processing:
 - Decrement product_item.stock_quantity
 - Check price_override before charging
-
+2. Product Search
+   <pre>SELECT * FROM product 
+   WHERE product_id IN (
+   SELECT product_id FROM product_variation
+   WHERE color_id = (SELECT color_id FROM color WHERE color_name = 'Red')
+   )</pre>
