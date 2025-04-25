@@ -127,33 +127,6 @@ ORDER BY pv.color, pi.is_primary DESC, pi.image_order;
 | Visualization | Lucidchart |
 | Implementation | MySQL 8.0+ |
 
-## 📂 Repository Structure
-
-```
-/ecommerce_db
-├── /docs
-│   ├── erd.pdf                 # High-res ER diagram
-│   ├── data_flow.drawio        # Process workflows
-│   └── api_reference.md        # Integration docs
-├── /sql
-│   ├── schema.sql              # Complete DB schema
-│   ├── sample_data.sql         # Example dataset
-│   └── indexes.sql             # Performance optimization
-├── /scripts
-│   ├── data_loader.py          # ETL scripts
-│   └── backup_utility.sh       # DB maintenance
-└── README.md                   # Project documentation
-```
-# Collaborators
-
-## 👥 Team & Collaboration
-
  [@Bryan Mwalwala](https://github.com/bryan1028)
-[@Zipporah Rehema](https://github.com/) 
+[@Zipporah Rehema](https://github.com/zippyrehema123)
  [@Frida Karimi](https://github.com/Fridasamkarimi) 
-
-### **How to Contribute**
-1. **Fork** the repository  
-2. Create a branch:  
-   ```bash
-   git checkout -b feature/your-feature
