@@ -1,0 +1,211 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Entities -->
+  
+  <!-- product -->
+  <rect x="50" y="380" width="180" height="200" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="50" y="380" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="140" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product</text>
+  <line x1="50" y1="410" x2="230" y2="410" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="60" y="430" font-family="Arial" font-size="12" fill="black">PK product_id INT</text>
+  <text x="60" y="450" font-family="Arial" font-size="12" fill="black">◊ product_name VARCHAR(150)</text>
+  <text x="60" y="470" font-family="Arial" font-size="12" fill="black">◊ brand_id INT</text>
+  <text x="60" y="490" font-family="Arial" font-size="12" fill="black">◊ category_id INT</text>
+  <text x="60" y="510" font-family="Arial" font-size="12" fill="black">◊ base_price DECIMAL(10,2)</text>
+  <text x="60" y="530" font-family="Arial" font-size="12" fill="black">◊ description TEXT</text>
+  <text x="60" y="550" font-family="Arial" font-size="12" fill="black">◊ is_active TINYINT(1)</text>
+  <text x="60" y="570" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- product_category -->
+  <rect x="630" y="380" width="180" height="160" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="630" y="380" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="720" y="400" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product_category</text>
+  <line x1="630" y1="410" x2="810" y2="410" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="640" y="430" font-family="Arial" font-size="12" fill="black">PK category_id INT</text>
+  <text x="640" y="450" font-family="Arial" font-size="12" fill="black">◊ category_name VARCHAR(100)</text>
+  <text x="640" y="470" font-family="Arial" font-size="12" fill="black">◊ description TEXT</text>
+  <text x="640" y="490" font-family="Arial" font-size="12" fill="black">◊ parent_category_id INT</text>
+  <text x="640" y="510" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- product_variation -->
+  <rect x="340" y="180" width="180" height="160" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="340" y="180" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="430" y="200" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product_variation</text>
+  <line x1="340" y1="210" x2="520" y2="210" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="350" y="230" font-family="Arial" font-size="12" fill="black">PK variation_id INT</text>
+  <text x="350" y="250" font-family="Arial" font-size="12" fill="black">FK product_id INT</text>
+  <text x="350" y="270" font-family="Arial" font-size="12" fill="black">FK color_id INT</text>
+  <text x="350" y="290" font-family="Arial" font-size="12" fill="black">FK size_option_id INT</text>
+  <text x="350" y="310" font-family="Arial" font-size="12" fill="black">◊ sku VARCHAR(50)</text>
+  <text x="350" y="330" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- product_item -->
+  <rect x="340" y="500" width="180" height="180" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="340" y="500" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="430" y="520" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product_item</text>
+  <line x1="340" y1="530" x2="520" y2="530" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="350" y="550" font-family="Arial" font-size="12" fill="black">PK item_id INT</text>
+  <text x="350" y="570" font-family="Arial" font-size="12" fill="black">FK variation_id INT</text>
+  <text x="350" y="590" font-family="Arial" font-size="12" fill="black">◊ stock_quantity INT</text>
+  <text x="350" y="610" font-family="Arial" font-size="12" fill="black">◊ price_override DECIMAL(10,2)</text>
+  <text x="350" y="630" font-family="Arial" font-size="12" fill="black">◊ weight_grams DECIMAL(10,2)</text>
+  <text x="350" y="650" font-family="Arial" font-size="12" fill="black">◊ is_active TINYINT(1)</text>
+  <text x="350" y="670" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- brand -->
+  <rect x="50" y="50" width="180" height="180" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="50" y="50" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="140" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">brand</text>
+  <line x1="50" y1="80" x2="230" y2="80" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="60" y="100" font-family="Arial" font-size="12" fill="black">PK brand_id INT</text>
+  <text x="60" y="120" font-family="Arial" font-size="12" fill="black">◊ brand_name VARCHAR(100)</text>
+  <text x="60" y="140" font-family="Arial" font-size="12" fill="black">◊ description TEXT</text>
+  <text x="60" y="160" font-family="Arial" font-size="12" fill="black">◊ logo_url VARCHAR(255)</text>
+  <text x="60" y="180" font-family="Arial" font-size="12" fill="black">◊ website_url VARCHAR(255)</text>
+  <text x="60" y="200" font-family="Arial" font-size="12" fill="black">◊ founded_year INT</text>
+  <text x="60" y="220" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- size_category -->
+  <rect x="50" y="240" width="180" height="120" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="50" y="240" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="140" y="260" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">size_category</text>
+  <line x1="50" y1="270" x2="230" y2="270" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="60" y="290" font-family="Arial" font-size="12" fill="black">PK size_category_id INT</text>
+  <text x="60" y="310" font-family="Arial" font-size="12" fill="black">◊ category_name VARCHAR(50)</text>
+  <text x="60" y="330" font-family="Arial" font-size="12" fill="black">◊ description TEXT</text>
+  <text x="60" y="350" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- size_option -->
+  <rect x="340" y="30" width="180" height="140" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="340" y="30" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="430" y="50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">size_option</text>
+  <line x1="340" y1="60" x2="520" y2="60" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="350" y="80" font-family="Arial" font-size="12" fill="black">PK size_option_id INT</text>
+  <text x="350" y="100" font-family="Arial" font-size="12" fill="black">FK size_category_id INT</text>
+  <text x="350" y="120" font-family="Arial" font-size="12" fill="black">◊ size_label VARCHAR(20)</text>
+  <text x="350" y="140" font-family="Arial" font-size="12" fill="black">◊ size_order INT</text>
+  <text x="350" y="160" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- color -->
+  <rect x="50" y="600" width="180" height="120" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="50" y="600" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="140" y="620" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">color</text>
+  <line x1="50" y1="630" x2="230" y2="630" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="60" y="650" font-family="Arial" font-size="12" fill="black">PK color_id INT</text>
+  <text x="60" y="670" font-family="Arial" font-size="12" fill="black">◊ color_name VARCHAR(50)</text>
+  <text x="60" y="690" font-family="Arial" font-size="12" fill="black">◊ hex_code CHAR(7)</text>
+  <text x="60" y="710" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- product_attribute -->
+  <rect x="630" y="30" width="180" height="160" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="630" y="30" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="720" y="50" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product_attribute</text>
+  <line x1="630" y1="60" x2="810" y2="60" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="640" y="80" font-family="Arial" font-size="12" fill="black">PK attribute_id INT</text>
+  <text x="640" y="100" font-family="Arial" font-size="12" fill="black">FK product_id INT</text>
+  <text x="640" y="120" font-family="Arial" font-size="12" fill="black">FK attribute_category_id INT</text>
+  <text x="640" y="140" font-family="Arial" font-size="12" fill="black">FK attribute_type_id INT</text>
+  <text x="640" y="160" font-family="Arial" font-size="12" fill="black">◊ attribute_name VARCHAR(100)</text>
+  <text x="640" y="180" font-family="Arial" font-size="12" fill="black">◊ attribute_value VARCHAR(255)</text>
+  
+  <!-- attribute_category -->
+  <rect x="630" y="220" width="180" height="120" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="630" y="220" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="720" y="240" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">attribute_category</text>
+  <line x1="630" y1="250" x2="810" y2="250" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="640" y="270" font-family="Arial" font-size="12" fill="black">PK attribute_category_id INT</text>
+  <text x="640" y="290" font-family="Arial" font-size="12" fill="black">◊ name VARCHAR(100)</text>
+  <text x="640" y="310" font-family="Arial" font-size="12" fill="black">◊ description TEXT</text>
+  <text x="640" y="330" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- attribute_type -->
+  <rect x="630" y="550" width="180" height="120" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="630" y="550" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="720" y="570" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">attribute_type</text>
+  <line x1="630" y1="580" x2="810" y2="580" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="640" y="600" font-family="Arial" font-size="12" fill="black">PK type_id INT</text>
+  <text x="640" y="620" font-family="Arial" font-size="12" fill="black">◊ type_name VARCHAR(50)</text>
+  <text x="640" y="640" font-family="Arial" font-size="12" fill="black">◊ created_at TIMESTAMP</text>
+  
+  <!-- product_image -->
+  <rect x="340" y="350" width="180" height="140" rx="5" fill="#B3D7EA" stroke="#6D93AA" stroke-width="2"/>
+  <rect x="340" y="350" width="180" height="30" rx="5" fill="#6D93AA" stroke="#6D93AA" stroke-width="2"/>
+  <text x="430" y="370" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="white">product_image</text>
+  <line x1="340" y1="380" x2="520" y2="380" stroke="#6D93AA" stroke-width="2"/>
+  
+  <text x="350" y="400" font-family="Arial" font-size="12" fill="black">PK image_id INT</text>
+  <text x="350" y="420" font-family="Arial" font-size="12" fill="black">FK product_item_id INT</text>
+  <text x="350" y="440" font-family="Arial" font-size="12" fill="black">◊ image_url VARCHAR(255)</text>
+  <text x="350" y="460" font-family="Arial" font-size="12" fill="black">◊ is_primary TINYINT(1)</text>
+  <text x="350" y="480" font-family="Arial" font-size="12" fill="black">◊ alt_text VARCHAR(255)</text>
+  
+  <!-- Relationships -->
+  
+  <!-- product to product_variation -->
+  <line x1="230" y1="430" x2="340" y2="240" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="270" y="330" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  <text x="320" y="240" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  
+  <!-- product to product_attribute -->
+  <line x1="230" y1="400" x2="630" y2="100" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="250" y="400" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  <text x="610" y="100" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  
+  <!-- product to product_category -->
+  <line x1="230" y1="490" x2="630" y2="430" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="250" y="490" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="610" y="430" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- product to brand -->
+  <line x1="140" y1="380" x2="140" y2="230" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="150" y="370" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="150" y="240" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- product_variation to size_option -->
+  <line x1="430" y1="180" x2="430" y2="170" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="440" y="175" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="440" y="165" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- product_variation to color -->
+  <line x1="340" y1="270" x2="140" y2="600" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="330" y="270" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="150" y="590" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- size_option to size_category -->
+  <line x1="340" y1="100" x2="230" y2="290" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="330" y="100" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="240" y="290" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- product_variation to product_item -->
+  <line x1="430" y1="340" x2="430" y2="500" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="440" y="350" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  <text x="440" y="490" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  
+  <!-- product_item to product_image -->
+  <line x1="520" y1="550" x2="520" y2="430" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="530" y="540" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  <text x="530" y="440" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  
+  <!-- product_attribute to attribute_category -->
+  <line x1="720" y1="190" x2="720" y2="220" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="730" y="200" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="730" y="215" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- product_attribute to attribute_type -->
+  <line x1="720" y1="190" x2="720" y2="550" stroke="#000" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="730" y="200" text-anchor="middle" font-family="Arial" font-size="12">n</text>
+  <text x="730" y="540" text-anchor="middle" font-family="Arial" font-size="12">1</text>
+  
+  <!-- Title -->
+  <text x="450" y="25" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">E-commerce Product Database ERD</text>
+</svg>
