@@ -144,3 +144,8 @@ ORDER BY pv.color, pi.is_primary DESC, pi.image_order;
 │   └── backup_utility.sh       # DB maintenance
 └── README.md                   # Project documentation
 ```
+# Collaborators
+
+@bryan1028
+@zippyrehema123
+@fridasamkarimi
