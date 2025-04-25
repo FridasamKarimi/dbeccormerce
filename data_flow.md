@@ -8,7 +8,7 @@ our ecommerce database enables a merchant to create a brand, the respective cate
    ![price coalsesce](https://github.com/user-attachments/assets/1c42bcca-7dba-48f9-be21-acf3ecdff421)
 
 
-Our ecommerce database enables the merchants to adjust their prices whenever they choose ie clearance sale, addition of a limited edition item that is so special and so rare to get your hands on. Oh and bundle deals 3 for $10, what a steal!...you get the gist. Price override clearly identifies which items have special pricing and which items are available at the base_price. Real time price resolution handles complex pricing scenarios, supports time-sensitive promotions and may even enable location based pricing. Isn't that a treat?
+Our ecommerce database enables the merchants to adjust their prices whenever they choose ie clearance sale, addition of a limited edition item that is so special and so rare to get your hands on. Oh and bundle deals 3 for $10, what a steal!...you get the gist. Price override clearly identifies which items have special pricing and which items are available at the base_price. Real time price resolution handles complex pricing scenarios, supports time-sensitive promotions and may even enable location based pricing. Isn't that a treat?🍭 
 
 # 3. Inventory management. 🚛
 ![inventory management](https://github.com/user-attachments/assets/1fea7bb9-d3c5-4d88-9649-db01581e4b1a)
@@ -58,3 +58,9 @@ The journey our 'child' Nike Air Max takes. They grow up so fast 😢
   ![customer process](https://github.com/user-attachments/assets/c74b4891-fcaa-4a3e-9a9c-8062197447fb)
   This is a customer order process journey.
 
+# 🏆 Why we win the market
+1) Our database avoids **duplication**: product details aren't repeated for each color/size. (clarity in selection)
+2)  **Flexible inventory** : Same product can have:
+   - Different prices (limited edition) yes our beautiful Nike Air Max! 👟
+   - Separate stock counts per warehouse
+3) **Scalable categories**: No limit to category depth. They don't call us the everything store for no reason! Any niche you are looking for is readily available.
