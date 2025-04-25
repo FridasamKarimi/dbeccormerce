@@ -17,7 +17,7 @@ Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan
      -- Colors <pre> INSERT INTO color VALUES (10, 'Infrared', '#FF4D00'); </pre>
      -- Sizes <pre> INSERT INTO size_option VALUES (21, 2, 'US 10'); </pre>
      -- Variation <pre> INSERT INTO product_variation VALUES (501, 101, 10, 21); </pre>
- 5. Inventory -- Special pricing for limited edition INSERT INTO <pre> product_item VALUES (1001, 501, 50,   150.00); </pre>
+ 5. Inventory -- Special pricing for limited edition <pre> INSERT INTO product_item VALUES (1001, 501, 50,   150.00); </pre>
 
 # 🔗 Critical Relationships
 
