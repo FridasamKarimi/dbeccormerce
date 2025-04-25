@@ -21,11 +21,13 @@ Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan
 
 # 🔗 Critical Relationships
 
-Relationship	         Flow Direction	      Example
-Brand → Product	        1:N	               Nike → (Air Max, Air Force)
-Product → Variation	     1:N	               Air Max → (Red/Size 10, Blue/Size 9)
-Variation → Item	        1:1	               Red/Size 10 → Stock #1001
-Category → Subcategory	 Self-Reference	   Footwear → Running Shoes
+
+| Relationship               | Flow direction     |    Example                                  
+|--------------------------  |--------            |------------------------------------------|
+| **Brand → Product**        | 1:N                | *Nike* → *(Air Max, Air Force)*          |
+| **Product → Variation**    | 1:N                | *Air Max* → *(Red/Size 10, Blue/Size 9)* |
+| **Variation → Item**       | 1:1                | *Red/Size 10* → *Stock #1001*            |
+| **Category → Subcategory** |(Self-Reference)    | *Footwear* → *Running Shoes*             |
 
 TL;DR; One brand can have multiple products (one to many) Nike has a lot of shoes!brand is the parent with a lot of children. One product can also have multiple variations, we all have different sizes of feet & different tastes too, Red isn't my colour. Each variation points to exactly one inventory item - available in our warehouse just for you. Category - subcategory (self-reference) This is the everything store, that provides navigation ie think of Amazon. 
 
