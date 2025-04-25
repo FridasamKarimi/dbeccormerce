@@ -59,9 +59,9 @@ A comprehensive database solution for online retailers, enabling efficient manag
    ```
 
 # 📊 ER Diagram
+![erd](https://github.com/user-attachments/assets/549034ac-3691-4f76-aaa8-514967182a85)
+<img width="955" alt="erd2" src="https://github.com/user-attachments/assets/1f9290bc-a4d6-4e29-96ab-89c8dbedbfbd" />
 
-#<img width="955" alt="Screenshot 2025-04-25 at 13 20 58" src="https://github.com/user-attachments/assets/265ed471-19cb-43b7-891e-7e3ddbce252f" />
-<img width="955" alt="Screenshot 2025-04-25 at 13 21 06" src="https://github.com/user-attachments/assets/68063abc-fb58-4659-a7e6-447c6ec002d0" />
 
 
 *Complete visualization of table relationships*
