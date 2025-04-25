@@ -146,6 +146,14 @@ ORDER BY pv.color, pi.is_primary DESC, pi.image_order;
 ```
 # Collaborators
 
-@bryan1028
-@zippyrehema123
-@fridasamkarimi
+## 👥 Team & Collaboration
+
+ [@Bryan Mwalwala](https://github.com/bryan1028)
+[@Zipporah Rehema](https://github.com/) 
+ [@Frida Karimi](https://github.com/Fridasamkarimi) 
+
+### **How to Contribute**
+1. **Fork** the repository  
+2. Create a branch:  
+   ```bash
+   git checkout -b feature/your-feature
