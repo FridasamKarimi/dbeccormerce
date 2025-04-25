@@ -7,7 +7,6 @@ our ecommerce database enables a merchant to create a brand, the respective cate
    
    ![price coalsesce](https://github.com/user-attachments/assets/1c42bcca-7dba-48f9-be21-acf3ecdff421)
 
-   ![real time price resolution](https://github.com/user-attachments/assets/636653c1-583b-4381-9001-96a3349ee72d)
 
 Our ecommerce database enables the merchants to adjust their prices whenever they choose ie clearance sale, addition of a limited edition item that is so special and so rare to get your hands on. Oh and bundle deals 3 for $10, what a steal!...you get the gist. Price override clearly identifies which items have special pricing and which items are available at the base_price. Real time price resolution handles complex pricing scenarios, supports time-sensitive promotions and may even enable location based pricing. Isn't that a treat?
 
