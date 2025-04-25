@@ -58,9 +58,12 @@ A comprehensive database solution for online retailers, enabling efficient manag
    mysql -u [username] -p ecommerce_db < sql/sample_data.sql
    ```
 
-## 📊 ER Diagram
+# 📊 ER Diagram
 
-![Entity Relationship Diagram](docs/erd.png)  
+#<img width="955" alt="Screenshot 2025-04-25 at 13 20 58" src="https://github.com/user-attachments/assets/265ed471-19cb-43b7-891e-7e3ddbce252f" />
+<img width="955" alt="Screenshot 2025-04-25 at 13 21 06" src="https://github.com/user-attachments/assets/68063abc-fb58-4659-a7e6-447c6ec002d0" />
+
+
 *Complete visualization of table relationships*
 
 ## 🔍 Sample Queries
