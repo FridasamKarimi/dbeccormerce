@@ -8,3 +8,35 @@ Our ecommerce database enables the merchants to adjust their prices whenever the
 # 3. Inventory management. 🚛
 ![inventory management](https://github.com/user-attachments/assets/1fea7bb9-d3c5-4d88-9649-db01581e4b1a)
 Our database enables real time inventory management. The world has changed and a just-in-time inventory system exhibits that. If inventory supply is dwindling, reorders are added to keep giving the customers what they want!
+# 📊 Sample data journey
+Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan 🏀
+1. Brand
+   INSERT INTO brand VALUES (1, 'Nike', 'Athletic footwear');
+2. Category
+   INSERT INTO product_category VALUES (5, 'Footwear', 'Shoes', NULL);
+3. Product
+   INSERT INTO product VALUES (101, 'Air Max', 1, 5, 120.00);
+4. Variation
+   /* Colors */
+   INSERT INTO color VALUES (10, 'Infrared', '#FF4D00');
+
+   /* Sizes */
+   INSERT INTO size_option VALUES (21, 2, 'US 10');
+
+   /* Variation */
+   INSERT INTO product_variation VALUES (501, 101, 10, 21);
+5. Inventory
+   /* Special pricing for limited edition */
+   INSERT INTO product_item VALUES (1001, 501, 50, 150.00);
+
+# 🔗 Critical Relationships
+
+Relationship	         Flow Direction	      Example
+Brand → Product	        1:N	               Nike → (Air Max, Air Force)
+Product → Variation	     1:N	               Air Max → (Red/Size 10, Blue/Size 9)
+Variation → Item	        1:1	               Red/Size 10 → Stock #1001
+Category → Subcategory	 Self-Reference	   Footwear → Running Shoes
+
+TL;DR; One brand can have multiple products (one to many) Nike has a lot of shoes!brand is the parent with a lot of children. One product can also have multiple variations, we all have different sizes of feet & different tastes too, Red isn't my colour. Each variation points to exactly one inventory item - available in our warehouse just for you. Category - subcategory (self-reference) This is the everything store, that provides navigation ie think of Amazon. 
+       
+
