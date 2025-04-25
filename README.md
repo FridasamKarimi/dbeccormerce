@@ -115,9 +115,9 @@ ORDER BY pv.color, pi.is_primary DESC, pi.image_order;
 ## 👥 Team Collaboration
 
 ### Workflow
-- **Agile Methodology**: 2-week sprints with daily standups
+- **Agile Methodology**: sprints with daily standups
 - **Code Reviews**: Mandatory PR reviews before merging
-- **Documentation**: Maintained in Markdown with version history
+
 
 ### Tools Stack
 | Purpose | Tool |
