@@ -26,14 +26,7 @@ A comprehensive database solution for online retailers, enabling efficient manag
 
 ### Extended Features
 
-```mermaid
-erDiagram
-    BRAND ||--o{ PRODUCT : manufactures
-    PRODUCT ||--o{ PRODUCT_VARIATION : has
-    PRODUCT_VARIATION ||--o{ PRODUCT_ITEM : contains
-    PRODUCT ||--o{ PRODUCT_ATTRIBUTE : has
-    PRODUCT_VARIATION ||--o{ PRODUCT_IMAGE : displays
-```
+
 
 ## ✨ Key Features
 
