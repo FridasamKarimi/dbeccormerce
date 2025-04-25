@@ -1,3 +1,6 @@
+-- First create the database
+CREATE DATABASE ecommerce_db;
+
 USE ecommerce_db;
 -- 🏷️ Brand Table
 CREATE TABLE brand (
