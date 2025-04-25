@@ -20,6 +20,7 @@ Scenario: Adding "Nike Air Max" shoes and maybe just maybe we can be like Jordan
  5. Inventory -- Special pricing for limited edition <pre> INSERT INTO product_item VALUES (1001, 501, 50,   150.00); </pre>
 
 # 🔗 Critical Relationships
+![flow](https://github.com/user-attachments/assets/86fd7555-a3a2-4f48-8ccf-47a857613b17)
 
 
 | Relationship               | Flow direction     |    Example                                  
@@ -39,7 +40,7 @@ The journey our 'child' Nike Air Max takes. They grow up so fast 😢
 # ⚙️ Operational Flows
 
 1. Order Processing:
-- Decrement product_item.stock_quantity
+- Decrement product_item.stock_quantity on customer purchase
 - Check price_override before charging
 2. Product Search
    <pre>SELECT * FROM product 
@@ -47,3 +48,8 @@ The journey our 'child' Nike Air Max takes. They grow up so fast 😢
    SELECT product_id FROM product_variation
    WHERE color_id = (SELECT color_id FROM color WHERE color_name = 'Red')
    )</pre>
+
+# 🚗 Customer Journey
+  ![customer process](https://github.com/user-attachments/assets/c74b4891-fcaa-4a3e-9a9c-8062197447fb)
+  This is a customer order process journey.
+
